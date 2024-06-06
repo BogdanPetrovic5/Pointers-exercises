@@ -27,9 +27,11 @@ void loadClubs(Club** clubs, int* numClubs) {
 		fgets(clubName, 40, clubFile);
 		(*clubs + i)->name = (char*)malloc(strlen(clubName));
 		strcpy((*clubs)[i].name, clubName);
+		(*clubs)[i].name[strlen(clubName)-1] = '\0';
 		fgets(origin, 40, clubFile);
 		(*clubs + i)->cityOfOrigin = (char*)malloc(strlen(origin));
 		strcpy((*clubs)[i].cityOfOrigin, origin);
+		(*clubs)[i].cityOfOrigin[strlen(origin) - 1] = '\0';
 		fscanf(clubFile, "%d", &(*clubs)[i].points);
 		fgetc(clubFile);
 		fscanf(clubFile, "%d", &(*clubs)[i].goals);
@@ -48,8 +50,10 @@ void loadMatches(Match** matches, int* numMatches) {
 		(*matches)[*numMatches].host = (char*)malloc(strlen(hostName));
 		strcpy((*matches)[(*numMatches)].host, hostName);
 		fgets(guestName, 40, matchesFile);
+		(*matches)[(*numMatches)].host[strlen(hostName) - 1] = '\0';
 		(*matches)[(*numMatches)].guest = malloc(strlen(guestName));
 		strcpy((*matches)[(*numMatches)].guest, guestName);
+		(*matches)[(*numMatches)].guest[strlen(guestName) - 1] = '\0';
 		fscanf(matchesFile, "%d", &(*matches)[(*numMatches)].hostGoals);
 		fgetc(matchesFile);
 		fscanf(matchesFile, "%d", &(*matches)[(*numMatches)].guestGoals);
@@ -58,10 +62,11 @@ void loadMatches(Match** matches, int* numMatches) {
 	}
 }
 void printData(Club* club, int numClubs, Match* matches, int numMatches) {
-	printf("Klubovi:\n ");
+	printf("Klubovi:\n");
 	for (int i = 0; i < numClubs; i++) {
-		printf("%s %s %d %d\n", club[i].name, club[i].cityOfOrigin, club[i].points, club[i].points);
+		printf("%s %s %d %d\n", club[i].name, club[i].cityOfOrigin, club[i].points, club[i].goals);
 	}
+	printf("\n");
 	printf("Utakmice:\n");
 	for (int i = 0; i < numMatches; i++) {
 		printf("%s %s %d %d\n", matches[i].host, matches[i].guest, matches[i].hostGoals, matches[i].guestGoals);
@@ -121,23 +126,25 @@ void updateData(Club** clubs, Match* matches, int numClubs, int numMatches) {
 void merge(Club** clubs, int low, int mid, int high, int numClubs) {
 	int i = low;
 	int j = mid + 1;
-	int l = high;
-	int k = l;
-	Club* tempClubs = (Club*)malloc(sizeof(Club) * numClubs);
+	
+	int k = low;
+	int n = numClubs;
+	static Club tempClubs[100];
 	while (i <= mid && j <= high) {
-		if ((*clubs)[i].goals > (*clubs)[j].goals){
+		if ((*clubs)[i].points > (*clubs)[j].points){
 			tempClubs[k++] = (*clubs)[i++];
 		}else tempClubs[k++] = (*clubs)[j++];
 	}
-	for (; i < mid; i++) {
+	for (; i <= mid; i++) {
 		tempClubs[k++] = (*clubs)[i];
 	}
-	for (; j < high; j++) {
+	for (; j <= high; j++) {
 		tempClubs[k++] = (*clubs)[j];
 	}
-	for (i = l; i < high; i++) {
+	for (i = low; i <= high; i++) {
 		(*clubs)[i] = tempClubs[i];
 	}
+	
 }
 void mergeSort(Club **clubs, int numClubs, int low, int high) {
 
