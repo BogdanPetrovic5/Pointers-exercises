@@ -1,0 +1,3 @@
+﻿  source.c
+C:\Users\Bogdan\source\repos\Project10\Project10\source.c(16): warning C4715: 'isPalindrom': not all control paths return a value
+  Project10.vcxproj -> C:\Users\Bogdan\source\repos\Project10\x64\Debug\Project10.exe

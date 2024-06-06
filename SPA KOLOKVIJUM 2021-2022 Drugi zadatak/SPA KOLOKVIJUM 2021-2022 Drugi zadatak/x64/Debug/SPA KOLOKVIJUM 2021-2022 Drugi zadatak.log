@@ -1,0 +1,4 @@
+﻿  Source.c
+C:\Users\Bogdan\source\repos\SPA KOLOKVIJUM 2021-2022 Drugi zadatak\SPA KOLOKVIJUM 2021-2022 Drugi zadatak\Source.c(13,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\Bogdan\source\repos\SPA KOLOKVIJUM 2021-2022 Drugi zadatak\SPA KOLOKVIJUM 2021-2022 Drugi zadatak\Source.c(18,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  SPA KOLOKVIJUM 2021-2022 Drugi zadatak.vcxproj -> C:\Users\Bogdan\source\repos\SPA KOLOKVIJUM 2021-2022 Drugi zadatak\x64\Debug\SPA KOLOKVIJUM 2021-2022 Drugi zadatak.exe
