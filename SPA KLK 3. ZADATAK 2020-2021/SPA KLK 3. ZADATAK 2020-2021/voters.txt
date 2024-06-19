@@ -1,0 +1,34 @@
+11
+111
+Artan Lili
+9
+235
+Dubioza Kolektiv
+6
+345
+Buc Kesidi
+7
+111
+Hladno pivo
+9
+234
+Lollobrigida
+9
+111
+Brkovi
+5
+555
+Artan Lili
+8
+233
+Lollobrigida
+6
+557
+Buc Kesidi
+2
+889
+Hladno pivo
+3
+889
+Brkovi
+6
