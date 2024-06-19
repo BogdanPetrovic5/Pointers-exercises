@@ -1,0 +1,16 @@
+﻿  Source.c
+C:\Users\Bogdan\source\repos\Project10\Project10\Source.c(17,20): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\Bogdan\source\repos\Project10\Project10\Source.c(23,2): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\Bogdan\source\repos\Project10\Project10\Source.c(33,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\Bogdan\source\repos\Project10\Project10\Source.c(35,3): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\Bogdan\source\repos\Project10\Project10\Source.c(44,22): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\Bogdan\source\repos\Project10\Project10\Source.c(50,2): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\Bogdan\source\repos\Project10\Project10\Source.c(60,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\Bogdan\source\repos\Project10\Project10\Source.c(62,3): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\Bogdan\source\repos\Project10\Project10\Source.c(69,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\Bogdan\source\repos\Project10\Project10\Source.c(71,3): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\Bogdan\source\repos\Project10\Project10\Source.c(93,8): warning C4047: 'initializing': 'char' differs in levels of indirection from 'void *'
+C:\Users\Bogdan\source\repos\Project10\Project10\Source.c(94,8): warning C4047: 'initializing': 'char' differs in levels of indirection from 'void *'
+C:\Users\Bogdan\source\repos\Project10\Project10\Source.c(167,30): warning C4090: 'function': different 'const' qualifiers
+C:\Users\Bogdan\source\repos\Project10\Project10\Source.c(168,36): warning C4090: 'function': different 'const' qualifiers
+  Project10.vcxproj -> C:\Users\Bogdan\source\repos\Project10\x64\Debug\Project10.exe
